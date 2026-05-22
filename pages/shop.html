@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop | FFEE</title>
+    <meta
+      name="description"
+      content="FFEE Shop은 clothing, furniture, object를 하나의 visual system 안에서 선별하는 object index입니다."
+    />
+    <link rel="stylesheet" href="../styles/styles.css" />
+  </head>
+  <body class="shop-page">
+    <header class="site-header" aria-label="FFEE site header">
+      <a class="site-logo" href="../index.html" aria-label="FFEE home">FFEE</a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="shop.html" aria-current="page">Shop</a>
+        <a href="info.html">Info</a>
+        <a href="archive.html">Archive</a>
+        <a href="journal.html">Journal</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="shop-hero" aria-labelledby="shop-title">
+        <div class="hero-backgrounds" aria-hidden="true">
+          <span class="hero-background is-active" style="background-image: url('../images/Shop/shop-hero-background.png')"></span>
+          <span class="hero-background" style="background-image: url('../images/Shop/shop-editorial.png')"></span>
+          <span class="hero-background" style="background-image: url('../images/Shop/shop-hero-showroom.png')"></span>
+          <span class="hero-background" style="background-image: url('../images/Shop/shop-hero-shelf-desk.png')"></span>
+        </div>
+        <div class="shop-hero-copy">
+          <p class="section-label">Shop</p>
+          <h1 id="shop-title">Object index for wearing, living, and using.</h1>
+          <p>
+            FFEE는 의류, 가구, 오브젝트를 하나의 visual system 안에서 선별합니다.
+            상품은 단순한 판매물이 아니라 구조와 감각을 테스트하는 물리적 모듈입니다.
+          </p>
+        </div>
+      </section>
+
+      <section class="shop-section" aria-label="Product list">
+        <div class="shop-controls">
+          <div>
+            <p class="shop-controls-label">OBJECT_INDEX</p>
+            <p class="shop-count" id="shopCount">17 modules loaded</p>
+          </div>
+
+          <div class="filter-group" aria-label="Product categories">
+            <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+            <button class="filter-button" type="button" data-filter="clothing" aria-pressed="false">Clothing</button>
+            <button class="filter-button" type="button" data-filter="furniture" aria-pressed="false">Furniture</button>
+            <button class="filter-button" type="button" data-filter="design" aria-pressed="false">Design</button>
+          </div>
+
+          <label class="sort-control">
+            <span>Sort</span>
+            <select id="shopSort">
+              <option value="featured">Featured</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="product-grid" id="productGrid" aria-live="polite">
+          <a class="product-card" href="products/graphite-utility-shirt.html" data-category="clothing" data-price="178000" data-featured="1">
+            <div class="product-visual visual-graphite">
+              <img src="../images/Shop/Clothing/Shirt/Utility%20Shirt/Graphite/shop-graphite-utility-shirt.png" alt="Graphite Utility Shirt product image" />
+            </div>
+            <div class="product-info">
+              <p>Clothing / Surface Wear</p>
+              <h2>Graphite Utility Shirt</h2>
+              <div>
+                <span>KRW 178,000</span>
+                <small>cotton ripstop / charcoal</small>
+              </div>
+              <dl>
+                <div>
+                  <dt>Status</dt>
+                  <dd>Available</dd>
+                </div>
+                <div>
+                  <dt>Signal</dt>
+                  <dd>Panel pocket / matte surface</dd>
+                </div>
+              </dl>
+            </div>
+          </a>
+
+          <a class="product-card" href="products/white-utility-shirt.html" data-category="clothing" data-price="168000" data-featured="2">
+            <div class="product-visual visual-graphite">
+              <img src="../images/Shop/Clothing/Shirt/Utility%20Shirt/White/shop-white-utility-shirt.png" alt="White Utility Shirt product image" />
+            </div>
+            <div class="product-info">
+              <p>Clothing / Surface Wear</p>
+              <h2>White Utility Shirt</h2>
+              <div>
+                <span>KRW 168,000</span>
+                <small>cotton ripstop / white</small>
+              </div>
+              <dl>
+                <div>
+                  <dt>Status</dt>
+                  <dd>Available</dd>
+                </div>
+                <div>
+                  <dt>Signal</dt>
+                  <dd>Clean panel / light surface</dd>
+                </div>
+              </dl>
+            </div>
+          </a>
+
+          <a class="product-card" href="products/green-utility-shirt.html" data-category="clothing" data-price="172000" data-featured="3">
+            <div class="product-visual visual-graphite">
+              <img src="../images/Shop/Clothing/Shirt/Utility%20Shirt/Green/shop-green-utility-shirt.png" alt="Green Utility Shirt product image" />
+            </div>
+            <div class="product-info">
+              <p>Clothing / Surface Wear</p>
+              <h2>Green Utility Shirt</h2>
+              <div>
+                <span>KRW 172,000</span>
+                <small>cotton ripstop / olive green</small>
+              </div>
+              <dl>
+                <div>
+                  <dt>Status</dt>
+                  <dd>Available</dd>
+                </div>
+                <div>
+                  <dt>Signal</dt>
+                  <dd>Olive panel / field surface</dd>
+                </div>
+              </dl>
+            </div>
+          </a>
+
+          <a class="product-card" href="products/sand-utility-shirt.html" data-category="clothing" data-price="172000" data-featured="4">
+            <div class="product-visual visual-linen">
+              <img src="../images/Shop/Clothing/Shirt/Utility%20Shirt/Sand/shop-sand-utility-shirt.png" alt="Sand Utility Shirt product image" />
+            </div>
+            <div class="product-info">
+              <p>Clothing / Surface Wear</p>
+              <h2>Sand Utility Shirt</h2>
+              <div>
+                <span>KRW 172,000</span>
+                <small>cotton ripstop / sand beige</small>
+              </div>
+              <dl>
+                <div>
+                  <dt>Status</dt>
+                  <dd>Available</dd>
+                </div>
+                <div>
+                  <dt>Signal</dt>
+                  <dd>Warm panel / neutral surface</dd>
+                </div>
+              </dl>
+            </div>
+          </a>
+
+          <a class="product-card" href="products/graphite-grid-pocket-pants.html" data-category="clothing" data-price="188000" data-featured="5">
+            <div class="product-visual visual-graphite">
+              <img src="../images/Shop/Clothing/Pants/Grid%20Pocket%20Pants/Graphite/shop-graphite-grid-pocket-pants.png" alt="Graphite Grid Pocket Pants product image" />
+            </div>
+            <div class="product-info">
+              <p>Clothing / Utility Bottom</p>
+              <h2>Graphite Grid Pocket Pants</h2>
+              <div>
+                <span>KRW 188,000</span>
+                <small>cotton ripstop / graphite</small>
+              </div>
+              <dl>
+                <div>
+                  <dt>Status</dt>
+                  <dd>Available</dd>
+                </div>
+                <div>
+                  <dt>Signal</dt>
+                  <dd>Grid pocket / modular line</dd>
+                </div>
+              </dl>
+            </div>
+          </a>
+
+          <a class="product-card" href="products/warm-stone-grid-pocket-pants.html" data-category="clothing" data-price="188000" data-featured="6">
+            <div class="product-visual visual-linen">
+              <img src="../images/Shop/Clothing/Pants/Grid%20Pocket%20Pants/Warm%20Stone/shop-warm-stone-grid-pocket-pants.png" alt="Warm Stone Grid Pocket Pants product image" />
+            </div>
+            <div class="product-info">
+              <p>Clothing / Utility Bottom</p>
+              <h2>Warm Stone Grid Pocket Pants</h2>
+              <div>
+                <span>KRW 188,000</span>
+                <small>cotton ripstop / warm stone</small>
+              </div>
+              <dl>
+                <div>
+                  <dt>Status</dt>
+                  <dd>Available</dd>
+                </div>
+                <div>
+                  <dt>Signal</dt>
+                  <dd>Light grid / soft utility</dd>
+                </div>
+              </dl>
+            </div>
+          </a>
+
+          <a class="product-card" href="products/soil-brown-grid-pocket-pants.html" data-category="clothing" data-price="188000" data-featured="7">
+            <div class="product-visual visual-graphite">
+              <img src="../images/Shop/Clothing/Pants/Grid%20Pocket%20Pants/Soil%20Brown/shop-soil-brown-grid-pocket-pants.png" alt="Soil Brown Grid Pocket Pants product image" />
+            </div>
+            <div class="product-info">
+              <p>Clothing / Utility Bottom</p>
+              <h2>Soil Brown Grid Pocket Pants</h2>
+              <div>
+                <span>KRW 188,000</span>
+                <small>cotton ripstop / soil brown</small>
+              </div>
+              <dl>
+                <div>
+                  <dt>Status</dt>
+                  <dd>Available</dd>
+                </div>
+                <div>
+                  <dt>Signal</dt>
+                  <dd>Earth grid / sand pairing</dd>
+                </div>
+              </dl>
+            </div>
+          </a>
+
+          <a class="product-card" href="products/slate-navy-grid-pocket-pants.html" data-category="clothing" data-price="188000" data-featured="8">
+            <div class="product-visual visual-graphite">
+              <img src="../images/Shop/Clothing/Pants/Grid%20Pocket%20Pants/Slate%20Navy/shop-slate-navy-grid-pocket-pants.png" alt="Slate Navy Grid Pocket Pants product image" />
+            </div>
+            <div class="product-info">
+              <p>Clothing / Utility Bottom</p>
+              <h2>Slate Navy Grid Pocket Pants</h2>
+              <div>
+                <span>KRW 188,000</span>
+                <small>cotton ripstop / slate navy</small>
+              </div>
+              <dl>
+                <div>
+                  <dt>Status</dt>
+                  <dd>Available</dd>
+                </div>
+                <div>
+                  <dt>Signal</dt>
+                  <dd>Blue grid / quiet contrast</dd>
+                </div>
+              </dl>
+            </div>
+          </a>
+
+          <a class="product-card" href="products/linen-texture-top.html" data-category="clothing" data-price="132000" data-featured="9">
+            <div class="product-visual visual-linen">
+              <img src="../images/Shop/Clothing/shop-linen-texture-top.png" alt="Linen Texture Top product image" />
+            </div>
+            <div class="product-info">
+              <p>Clothing / Texture Layer</p>
+              <h2>Linen Texture Top</h2>
+              <div>
+                <span>KRW 132,000</span>
+                <small>washed linen / warm grey</small>
+              </div>
+              <dl>
+                <div>
+                  <dt>Status</dt>
+                  <dd>Limited</dd>
+                </div>
+                <div>
+                  <dt>Signal</dt>
+                  <dd>Fine texture / soft line</dd>
+                </div>
+              </dl>
+            </div>
+          </a>
+
+          <a class="product-card" href="products/low-grid-stool.html" data-category="furniture" data-price="420000" data-featured="2">
+            <div class="product-visual visual-stool">
+              <img src="../images/Shop/Furniture/shop-low-grid-stool.png" alt="Low Grid Stool product image" />
+            </div>
+            <div class="product-info">
+              <p>Furniture / Low Module</p>
+              <h2>Low Grid Stool</h2>
+              <div>
+                <span>KRW 420,000</span>
+                <small>oak frame / modular seat</small>
+              </div>
+              <dl>
+                <div>
+                  <dt>Status</dt>
+                  <dd>Made to order</dd>
+                </div>
+                <div>
+                  <dt>Signal</dt>
+                  <dd>Low grid / exposed support</dd>
+                </div>
+              </dl>
+            </div>
+          </a>
+
+          <a class="product-card" href="products/soft-edge-chair.html" data-category="furniture" data-price="690000" data-featured="5">
+            <div class="product-visual visual-chair">
+              <img src="../images/Shop/Furniture/shop-soft-edge-chair.png" alt="Soft Edge Chair product image" />
+            </div>
+            <div class="product-info">
+              <p>Furniture / Posture System</p>
+              <h2>Soft Edge Chair</h2>
+              <div>
+                <span>KRW 690,000</span>
+                <small>textile shell / black steel</small>
+              </div>
+              <dl>
+                <div>
+                  <dt>Status</dt>
+                  <dd>Made to order</dd>
+                </div>
+                <div>
+                  <dt>Signal</dt>
+                  <dd>Soft shell / black frame</dd>
+                </div>
+              </dl>
+            </div>
+          </a>
+
+          <a class="product-card" href="products/black-task-lamp.html" data-category="furniture" data-price="260000" data-featured="3">
+            <div class="product-visual visual-lamp">
+              <img src="../images/Shop/Furniture/Lighting/Black%20Task%20Lamp/shop-black-task-lamp-front.png" alt="Black Task Lamp product image" />
+            </div>
+            <div class="product-info">
+              <p>Furniture / Lighting Object</p>
+              <h2>Black Task Lamp</h2>
+              <div>
+                <span>KRW 260,000</span>
+                <small>powder-coated steel / warm LED</small>
+              </div>
+              <dl>
+                <div>
+                  <dt>Status</dt>
+                  <dd>Available</dd>
+                </div>
+                <div>
+                  <dt>Signal</dt>
+                  <dd>Angled shade / quiet task light</dd>
+                </div>
+              </dl>
+            </div>
+          </a>
+
+          <a class="product-card" href="products/white-task-lamp.html" data-category="furniture" data-price="260000" data-featured="3.5">
+            <div class="product-visual visual-lamp-white">
+              <img src="../images/Shop/Furniture/Lighting/White%20Task%20Lamp/shop-white-task-lamp-front.png" alt="White Task Lamp product image" />
+            </div>
+            <div class="product-info">
+              <p>Furniture / Lighting Object</p>
+              <h2>White Task Lamp</h2>
+              <div>
+                <span>KRW 260,000</span>
+                <small>powder-coated steel / warm LED</small>
+              </div>
+              <dl>
+                <div>
+                  <dt>Status</dt>
+                  <dd>Available</dd>
+                </div>
+                <div>
+                  <dt>Signal</dt>
+                  <dd>Warm white shade / soft task light</dd>
+                </div>
+              </dl>
+            </div>
+          </a>
+
+          <a class="product-card" href="products/warm-stone-panel-work-desk.html" data-category="furniture" data-price="780000" data-featured="4">
+            <div class="product-visual visual-linen">
+              <img src="../images/Shop/Furniture/Desk/Panel%20Work%20Desk/Warm%20Stone/shop-warm-stone-panel-work-desk-clean.png" alt="Warm Stone Panel Work Desk product image" />
+            </div>
+            <div class="product-info">
+              <p>Furniture / Work Surface</p>
+              <h2>Warm Stone Panel Work Desk</h2>
+              <div>
+                <span>KRW 780,000</span>
+                <small>matte board / black panel frame</small>
+              </div>
+              <dl>
+                <div>
+                  <dt>Status</dt>
+                  <dd>Made to order</dd>
+                </div>
+                <div>
+                  <dt>Signal</dt>
+                  <dd>Panel leg / cable rail</dd>
+                </div>
+              </dl>
+            </div>
+          </a>
+
+          <a class="product-card" href="products/black-panel-work-desk.html" data-category="furniture" data-price="820000" data-featured="6">
+            <div class="product-visual visual-graphite">
+              <img src="../images/Shop/Furniture/Desk/Panel%20Work%20Desk/Black/shop-black-panel-work-desk.png" alt="Black Panel Work Desk product image" />
+            </div>
+            <div class="product-info">
+              <p>Furniture / Work Surface</p>
+              <h2>Black Panel Work Desk</h2>
+              <div>
+                <span>KRW 820,000</span>
+                <small>matte black / panel frame</small>
+              </div>
+              <dl>
+                <div>
+                  <dt>Status</dt>
+                  <dd>Made to order</dd>
+                </div>
+                <div>
+                  <dt>Signal</dt>
+                  <dd>Black plane / quiet rail</dd>
+                </div>
+              </dl>
+            </div>
+          </a>
+
+          <a class="product-card" href="products/ceramic-form-tray.html" data-category="design" data-price="68000" data-featured="3">
+            <div class="product-visual visual-ceramic">
+              <img src="../images/Shop/Design/shop-ceramic-form-tray.png" alt="Ceramic Form Tray product image" />
+            </div>
+            <div class="product-info">
+              <p>Design / Desk Object</p>
+              <h2>Ceramic Form Tray</h2>
+              <div>
+                <span>KRW 68,000</span>
+                <small>matte ceramic / desk object</small>
+              </div>
+              <dl>
+                <div>
+                  <dt>Status</dt>
+                  <dd>Available</dd>
+                </div>
+                <div>
+                  <dt>Signal</dt>
+                  <dd>Soft void / material hold</dd>
+                </div>
+              </dl>
+            </div>
+          </a>
+
+          <a class="product-card" href="products/material-note-set.html" data-category="design" data-price="94000" data-featured="6">
+            <div class="product-visual visual-paper">
+              <img src="../images/Shop/Design/shop-material-note-set.png" alt="Material Note Set product image" />
+            </div>
+            <div class="product-info">
+              <p>Design / Archive Tool</p>
+              <h2>Material Note Set</h2>
+              <div>
+                <span>KRW 94,000</span>
+                <small>paper index / sample cards</small>
+              </div>
+              <dl>
+                <div>
+                  <dt>Status</dt>
+                  <dd>Available</dd>
+                </div>
+                <div>
+                  <dt>Signal</dt>
+                  <dd>Material record / paper grid</dd>
+                </div>
+              </dl>
+            </div>
+          </a>
+        </div>
+
+        <button class="load-more-button" id="loadMoreProducts" type="button">
+          LOAD MORE
+        </button>
+      </section>
+
+      <section class="shop-intro" aria-labelledby="shop-intro-title">
+        <div class="shop-intro-heading">
+          <p class="section-label">System Note</p>
+          <h2 id="shop-intro-title">물건 이전에, 구조를 설계하는 방식.</h2>
+          <div class="shop-intro-code" aria-hidden="true">
+            <span>SHOP_OS / MODULE_NOTE</span>
+            <span>OBJECT_TRANSLATION_ACTIVE</span>
+          </div>
+        </div>
+        <div class="shop-intro-panel">
+          <figure class="shop-intro-visual">
+            <img
+              src="../images/Shop/shop-system-note.png"
+              alt="소재와 표면 샘플을 정리한 FFEE System Note 이미지"
+            />
+          </figure>
+          <p>
+            각 아이템은 소재, 표면, 비율, 쓰임을 기준으로 분류합니다. Shop은
+            카탈로그이면서 동시에 FFEE가 어떤 형태를 실제 물건으로 번역하는지
+            보여주는 작은 archive입니다.
+          </p>
+          <dl>
+            <div>
+              <dt>Input</dt>
+              <dd>surface / proportion / function</dd>
+            </div>
+            <div>
+              <dt>Output</dt>
+              <dd>clothing / furniture / object</dd>
+            </div>
+            <div>
+              <dt>Mode</dt>
+              <dd>archive system, not generic catalog</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>FFEE / Shop selected objects</p>
+      <p class="portfolio-note">AI를 활용해 기획과 시각 방향을 정리한 포트폴리오용 콘셉트 프로젝트입니다. 브랜드 콘셉트, 비주얼 시스템, 반응형 웹 디자인, 상품 인덱스, 상세 페이지, 인터랙티브 저널, 이미지 아카이브 구조를 포함합니다.</p>
+      <a href="mailto:hello@ffee.kr">hello@ffee.kr</a>
+    </footer>
+
+    <script src="../scripts/script.js"></script>
+  </body>
+</html>
+

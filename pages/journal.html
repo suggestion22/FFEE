@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>저널 | FFEE</title>
+    <meta
+      name="description"
+      content="FFEE Journal은 의류, 오브젝트, 소재, 색을 조합해 FFEE의 브랜드 문구를 만들어보는 인터랙티브 컴포지션 보드입니다."
+    />
+    <link rel="stylesheet" href="../styles/styles.css" />
+  </head>
+  <body class="journal-puzzle-page">
+    <div class="story-intro-modal" data-story-intro-modal role="dialog" aria-modal="true" aria-labelledby="story-intro-title">
+      <div class="story-intro-card">
+        <p class="story-intro-kicker">FFEE Journal / Composition Board</p>
+        <h2 id="story-intro-title">FFEE의 감각 문구를 조합해보세요.</h2>
+        <p>
+          의류, 오브젝트, 소재, 색은 따로 존재하지 않습니다. 선택한 조각들은 하나의 보드 위에서
+          FFEE가 사물을 바라보는 문장으로 연결됩니다.
+        </p>
+        <div class="story-intro-steps" aria-label="페이지 사용 방법">
+          <span>01 감각 조각 선택</span>
+          <span>02 보드 위에 배열</span>
+          <span>03 브랜드 문구 확인</span>
+        </div>
+        <button type="button" data-story-intro-close>시작하기</button>
+      </div>
+    </div>
+
+    <header class="site-header" aria-label="FFEE site header">
+      <a class="site-logo" href="../index.html" aria-label="FFEE home">FFEE</a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="shop.html">Shop</a>
+        <a href="info.html">Info</a>
+        <a href="archive.html">Archive</a>
+        <a href="journal.html" aria-current="page">Journal</a>
+      </nav>
+    </header>
+
+    <main class="journal-puzzle-shell" data-story-puzzle>
+      <aside class="card-library-panel" aria-labelledby="card-library-title">
+        <div class="puzzle-panel-heading">
+          <h1 id="card-library-title">감각 라이브러리</h1>
+          <button class="puzzle-icon-button" type="button" data-story-reset aria-label="문구 초기화">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+        <div class="card-library-layout">
+          <nav class="card-category-rail" aria-label="감각 카드 카테고리">
+            <button class="is-active" type="button" data-card-filter="all" aria-pressed="true">
+              <span class="category-icon icon-all"></span>ALL
+            </button>
+            <button type="button" data-card-filter="clothing" aria-pressed="false">
+              <span class="category-icon icon-clothing"></span>의류
+            </button>
+            <button type="button" data-card-filter="object" aria-pressed="false">
+              <span class="category-icon icon-object"></span>오브젝트
+            </button>
+            <button type="button" data-card-filter="material" aria-pressed="false">
+              <span class="category-icon icon-material"></span>소재
+            </button>
+            <button type="button" data-card-filter="color" aria-pressed="false">
+              <span class="category-icon icon-color"></span>색
+            </button>
+          </nav>
+
+          <div class="card-library-grid" aria-label="FFEE 브랜드 문구 카드">
+            <button
+              class="library-card"
+              id="category-clothing"
+              type="button"
+              data-story-card
+              data-card-category="clothing"
+              data-card-id="shirt"
+              data-card-label="셔츠"
+              data-card-line="셔츠는 몸의 움직임을 가장 가까운 표면으로 기록합니다"
+              data-card-image="../images/Shop/Clothing/Shirt/Utility%20Shirt/Graphite/shop-graphite-utility-shirt.png"
+            >
+              <img src="../images/Shop/Clothing/Shirt/Utility%20Shirt/Graphite/shop-graphite-utility-shirt.png" alt="셔츠 감각 카드 이미지" loading="lazy" decoding="async" />
+              <span>셔츠</span>
+            </button>
+            <button
+              class="library-card"
+              type="button"
+              data-story-card
+              data-card-category="clothing"
+              data-card-id="pants"
+              data-card-label="팬츠"
+              data-card-line="팬츠는 걷는 리듬과 실용적인 구조를 하나의 선으로 정리합니다"
+              data-card-image="../images/Shop/Clothing/Pants/Grid%20Pocket%20Pants/Graphite/shop-graphite-grid-pocket-pants.png"
+            >
+              <img src="../images/Shop/Clothing/Pants/Grid%20Pocket%20Pants/Graphite/shop-graphite-grid-pocket-pants.png" alt="팬츠 감각 카드 이미지" loading="lazy" decoding="async" />
+              <span>팬츠</span>
+            </button>
+            <button
+              class="library-card"
+              type="button"
+              data-story-card
+              data-card-category="clothing"
+              data-card-id="outer"
+              data-card-label="아우터"
+              data-card-line="아우터는 바깥의 공기와 개인의 실루엣을 연결합니다"
+              data-card-image="../images/Journal/journal-concept-fashion.png"
+            >
+              <img src="../images/Journal/journal-concept-fashion.png" alt="아우터 감각 카드 이미지" loading="lazy" decoding="async" />
+              <span>아우터</span>
+            </button>
+
+            <button
+              class="library-card"
+              id="category-object"
+              type="button"
+              data-story-card
+              data-card-category="object"
+              data-card-id="stool"
+              data-card-label="스톨"
+              data-card-line="낮은 스툴은 자세와 시선을 한 단계 낮춰줍니다"
+              data-card-image="../images/Shop/Furniture/shop-low-grid-stool.png"
+            >
+              <img src="../images/Shop/Furniture/shop-low-grid-stool.png" alt="스톨 감각 카드 이미지" loading="lazy" decoding="async" />
+              <span>스톨</span>
+            </button>
+            <button
+              class="library-card"
+              type="button"
+              data-story-card
+              data-card-category="object"
+              data-card-id="chair"
+              data-card-label="의자"
+              data-card-line="부드러운 의자는 공간 안에 머무는 시간을 늘립니다"
+              data-card-image="../images/Shop/Furniture/shop-soft-edge-chair.png"
+            >
+              <img src="../images/Shop/Furniture/shop-soft-edge-chair.png" alt="의자 감각 카드 이미지" loading="lazy" decoding="async" />
+              <span>의자</span>
+            </button>
+            <button
+              class="library-card"
+              type="button"
+              data-story-card
+              data-card-category="object"
+              data-card-id="lighting"
+              data-card-label="조명기구"
+              data-card-line="조명기구는 장면의 초점을 조용하게 모읍니다"
+              data-card-image="../images/Shop/Furniture/Lighting/Black%20Task%20Lamp/shop-black-task-lamp-front.png"
+            >
+              <img src="../images/Shop/Furniture/Lighting/Black%20Task%20Lamp/shop-black-task-lamp-front.png" alt="조명기구 감각 카드 이미지" loading="lazy" decoding="async" />
+              <span>조명기구</span>
+            </button>
+            <button
+              class="library-card"
+              type="button"
+              data-story-card
+              data-card-category="object"
+              data-card-id="desk"
+              data-card-label="데스크"
+              data-card-line="데스크는 조각들을 하나의 작업면으로 묶습니다"
+              data-card-image="../images/Shop/Furniture/Desk/Panel%20Work%20Desk/Warm%20Stone/shop-warm-stone-panel-work-desk-clean.png"
+            >
+              <img src="../images/Shop/Furniture/Desk/Panel%20Work%20Desk/Warm%20Stone/shop-warm-stone-panel-work-desk-clean.png" alt="데스크 감각 카드 이미지" loading="lazy" decoding="async" />
+              <span>데스크</span>
+            </button>
+
+            <button
+              class="library-card"
+              id="category-material"
+              type="button"
+              data-story-card
+              data-card-category="material"
+              data-card-id="material"
+              data-card-label="소재"
+              data-card-line="소재는 무드를 선명하고 단단하게 붙잡습니다"
+              data-card-image="../images/Shop/shop-system-note-catalog.png"
+            >
+              <img src="../images/Shop/shop-system-note-catalog.png" alt="소재 감각 카드 이미지" loading="lazy" decoding="async" />
+              <span>소재</span>
+            </button>
+            <button
+              class="library-card color-card"
+              id="category-color"
+              type="button"
+              data-story-card
+              data-card-category="color"
+              data-card-id="white"
+              data-card-label="화이트"
+              data-card-line="화이트는 표면 사이에 밝은 여백을 남깁니다"
+              data-card-color="#f1eee6"
+              data-card-image=""
+              style="--card-color: #f1eee6"
+            >
+              <span class="color-swatch"></span>
+              <span>화이트</span>
+            </button>
+            <button
+              class="library-card color-card"
+              type="button"
+              data-story-card
+              data-card-category="color"
+              data-card-id="green"
+              data-card-label="그린"
+              data-card-line="그린은 기능적인 조각에 차분한 생기를 더합니다"
+              data-card-color="#59614a"
+              data-card-image=""
+              style="--card-color: #59614a"
+            >
+              <span class="color-swatch"></span>
+              <span>그린</span>
+            </button>
+            <button
+              class="library-card color-card"
+              type="button"
+              data-story-card
+              data-card-category="color"
+              data-card-id="sand"
+              data-card-label="샌드"
+              data-card-line="샌드는 옷과 공간 사이를 부드럽게 이어줍니다"
+              data-card-color="#c7bba7"
+              data-card-image=""
+              style="--card-color: #c7bba7"
+            >
+              <span class="color-swatch"></span>
+              <span>샌드</span>
+            </button>
+            <button
+              class="library-card color-card"
+              type="button"
+              data-story-card
+              data-card-category="color"
+              data-card-id="graphite-color"
+              data-card-label="그라파이트"
+              data-card-line="그라파이트는 조합에 조용한 무게를 만듭니다"
+              data-card-color="#2c2d2b"
+              data-card-image=""
+              style="--card-color: #2c2d2b"
+            >
+              <span class="color-swatch"></span>
+              <span>그라파이트</span>
+            </button>
+            <button
+              class="library-card color-card"
+              type="button"
+              data-story-card
+              data-card-category="color"
+              data-card-id="warm-stone"
+              data-card-label="웜 스톤"
+              data-card-line="웜 스톤은 구조적인 분위기를 따뜻하게 낮춥니다"
+              data-card-color="#a89f91"
+              data-card-image=""
+              style="--card-color: #a89f91"
+            >
+              <span class="color-swatch"></span>
+              <span>웜 스톤</span>
+            </button>
+            <button
+              class="library-card color-card"
+              type="button"
+              data-story-card
+              data-card-category="color"
+              data-card-id="soil-brown"
+              data-card-label="소일 브라운"
+              data-card-line="소일 브라운은 촉감과 시간의 흔적을 남깁니다"
+              data-card-color="#6f5b45"
+              data-card-image=""
+              style="--card-color: #6f5b45"
+            >
+              <span class="color-swatch"></span>
+              <span>소일 브라운</span>
+            </button>
+            <button
+              class="library-card color-card"
+              type="button"
+              data-story-card
+              data-card-category="color"
+              data-card-id="slate-navy"
+              data-card-label="슬레이트 네이비"
+              data-card-line="슬레이트 네이비는 차분한 깊이를 더합니다"
+              data-card-color="#343b43"
+              data-card-image=""
+              style="--card-color: #343b43"
+            >
+              <span class="color-swatch"></span>
+              <span>슬레이트 네이비</span>
+            </button>
+            <button
+              class="library-card color-card"
+              type="button"
+              data-story-card
+              data-card-category="color"
+              data-card-id="linen-color"
+              data-card-label="리넨"
+              data-card-line="리넨 컬러는 조합의 표면을 가볍게 정돈합니다"
+              data-card-color="#d9cdb9"
+              data-card-image=""
+              style="--card-color: #d9cdb9"
+            >
+              <span class="color-swatch"></span>
+              <span>리넨</span>
+            </button>
+          </div>
+        </div>
+      </aside>
+
+      <section class="story-puzzle-panel" aria-labelledby="story-puzzle-title">
+        <div class="puzzle-panel-heading story-puzzle-heading">
+          <h2 id="story-puzzle-title">Composition Board</h2>
+        </div>
+
+        <div class="story-board" data-story-board aria-live="polite">
+          <div class="story-board-grid" data-story-board-grid></div>
+          <div class="story-board-dock">
+            <span class="dock-hand" aria-hidden="true"></span>
+            <span data-story-instruction>카드를 선택해 브랜드 문구를 만들어보세요</span>
+            <span class="dock-divider" aria-hidden="true"></span>
+            <span class="dock-grid" aria-hidden="true"></span>
+          </div>
+        </div>
+      </section>
+
+      <aside class="story-result-panel" aria-labelledby="story-result-title">
+        <div class="puzzle-panel-heading">
+          <h2 id="story-result-title">Generated Brand Line</h2>
+          <button class="pin-button" type="button" aria-label="브랜드 문구 고정"></button>
+        </div>
+
+        <figure class="story-collage" data-story-collage aria-label="선택한 카드로 구성된 FFEE 컴포지션 콜라주">
+          <div class="collage-empty">카드를 선택하면 조합 이미지가 만들어집니다.</div>
+        </figure>
+
+        <section class="story-paper" aria-live="polite">
+          <span class="paper-clip" aria-hidden="true"></span>
+          <h3>FFEE Brand Sentence</h3>
+          <p data-story-output>
+            카드를 선택하면 이곳에 FFEE의 언어로 정리된 브랜드 문구가 만들어집니다.
+          </p>
+        </section>
+
+        <div class="story-actions" aria-label="브랜드 문구 작업">
+          <button type="button" data-story-reset>초기화</button>
+          <button type="button" data-story-copy>복사</button>
+          <button type="button" data-story-shuffle>섞기</button>
+        </div>
+      </aside>
+    </main>
+
+    <footer class="site-footer">
+      <p>FFEE / Interactive journal</p>
+      <p class="portfolio-note">AI를 활용해 기획과 시각 방향을 정리한 포트폴리오용 콘셉트 프로젝트입니다. 브랜드 콘셉트, 비주얼 시스템, 반응형 웹 디자인, 상품 인덱스, 상세 페이지, 인터랙티브 저널, 이미지 아카이브 구조를 포함합니다.</p>
+      <a href="mailto:hello@ffee.kr">hello@ffee.kr</a>
+    </footer>
+
+    <script src="../scripts/script.js"></script>
+  </body>
+</html>
+

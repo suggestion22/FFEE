@@ -1,0 +1,125 @@
+﻿<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Graphite Utility Shirt | FFEE</title>
+    <meta
+      name="description"
+      content="FFEE Graphite Utility Shirt 제품 상세 페이지입니다. 구조적인 패널, 매트한 그래파이트 표면, cotton ripstop 소재를 다룹니다."
+    />
+    <link rel="stylesheet" href="../../styles/styles.css" />
+  </head>
+  <body class="product-detail-page">
+    <header class="site-header" aria-label="FFEE site header">
+      <a class="site-logo" href="../../index.html" aria-label="FFEE home">FFEE</a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="../shop.html" aria-current="page">Shop</a>
+        <a href="../info.html">Info</a>
+        <a href="../archive.html">Archive</a>
+        <a href="../journal.html">Journal</a>
+      </nav>
+    </header>
+
+    <main class="product-detail" data-product-gallery>
+      <section class="product-gallery" aria-label="Graphite Utility Shirt images">
+        <div class="product-gallery-viewer">
+          <button class="gallery-arrow gallery-arrow-prev" type="button" aria-label="Previous product image" data-gallery-prev></button>
+          <figure class="product-gallery-main">
+          <img
+            src="../../images/Shop/Clothing/Shirt/Utility%20Shirt/Graphite/shop-graphite-utility-shirt-model-front.png"
+            alt="Graphite Utility Shirt 모델 착용 정면 이미지"
+            data-gallery-main
+          />
+          </figure>
+          <button class="gallery-arrow gallery-arrow-next" type="button" aria-label="Next product image" data-gallery-next></button>
+        </div>
+        <div class="product-thumbnails" aria-label="Product image thumbnails">
+          <button class="is-active" type="button" data-gallery-src="../../images/Shop/Clothing/Shirt/Utility%20Shirt/Graphite/shop-graphite-utility-shirt-model-front.png" data-gallery-alt="Graphite Utility Shirt 모델 착용 정면 이미지">
+            <img src="../../images/Shop/Clothing/Shirt/Utility%20Shirt/Graphite/shop-graphite-utility-shirt-model-front.png" alt="" />
+          </button>
+          <button type="button" data-gallery-src="../../images/Shop/Clothing/Shirt/Utility%20Shirt/Graphite/shop-graphite-utility-shirt-model-side.png" data-gallery-alt="Graphite Utility Shirt 모델 착용 측면 이미지">
+            <img src="../../images/Shop/Clothing/Shirt/Utility%20Shirt/Graphite/shop-graphite-utility-shirt-model-side.png" alt="" />
+          </button>
+          <button type="button" data-gallery-src="../../images/Shop/Clothing/Shirt/Utility%20Shirt/Graphite/shop-graphite-utility-shirt.png" data-gallery-alt="Graphite Utility Shirt 정면 제품 이미지">
+            <img src="../../images/Shop/Clothing/Shirt/Utility%20Shirt/Graphite/shop-graphite-utility-shirt.png" alt="" />
+          </button>
+          <button type="button" data-gallery-src="../../images/Shop/Clothing/Shirt/Utility%20Shirt/Graphite/shop-graphite-utility-shirt-side.png" data-gallery-alt="Graphite Utility Shirt side panel image">
+            <img src="../../images/Shop/Clothing/Shirt/Utility%20Shirt/Graphite/shop-graphite-utility-shirt-side.png" alt="" />
+          </button>
+          <button type="button" data-gallery-src="../../images/Shop/Clothing/Shirt/Utility%20Shirt/Graphite/shop-graphite-utility-shirt-detail.png" data-gallery-alt="Graphite Utility Shirt pocket and seam detail image">
+            <img src="../../images/Shop/Clothing/Shirt/Utility%20Shirt/Graphite/shop-graphite-utility-shirt-detail.png" alt="" />
+          </button>
+        </div>
+      </section>
+
+      <aside class="product-detail-info" aria-labelledby="product-title">
+        <div class="product-detail-head">
+          <p class="product-code">OBJECT_001 / CLOTHING</p>
+          <h1 id="product-title">Graphite Utility Shirt</h1>
+          <p>Functional surface wear inspired by modular systems and quiet digital environments.</p>
+        </div>
+
+        <dl class="product-data">
+          <div>
+            <dt>Price</dt>
+            <dd>KRW 178,000</dd>
+          </div>
+          <div>
+            <dt>Material</dt>
+            <dd>Cotton ripstop</dd>
+          </div>
+          <div>
+            <dt>Color</dt>
+            <dd>Graphite</dd>
+          </div>
+          <div>
+            <dt>Status</dt>
+            <dd>Available</dd>
+          </div>
+          <div>
+            <dt>Module</dt>
+            <dd>FFEE-OS-001</dd>
+          </div>
+        </dl>
+
+        <div class="product-actions" aria-label="Product actions">
+          <button type="button">ADD TO ARCHIVE</button>
+          <a href="../shop.html">BACK TO INDEX</a>
+        </div>
+
+        <details class="product-accordion" open>
+          <summary>Details</summary>
+          <p>
+            그래파이트 컬러의 구조적인 utility shirt입니다. 전면 패널 포켓과 매트한
+            cotton ripstop 표면을 중심으로, 의류를 하나의 착용 가능한 interface
+            module로 해석합니다.
+          </p>
+        </details>
+
+        <details class="product-accordion">
+          <summary>Size Guide</summary>
+          <p>
+            Boxy regular fit. 어깨와 품에 여유 있게 설계되어, 이너 레이어와 함께
+            착용하기 좋습니다.
+          </p>
+        </details>
+
+        <details class="product-accordion">
+          <summary>Care</summary>
+          <p>
+            찬물 단독 세탁을 권장합니다. 표면 질감 유지를 위해 건조기 사용은
+            피해 주세요.
+          </p>
+        </details>
+      </aside>
+    </main>
+
+    <footer class="site-footer">
+      <p>FFEE / Product object detail</p>
+      <a href="mailto:hello@ffee.kr">hello@ffee.kr</a>
+    </footer>
+
+    <script src="../../scripts/script.js"></script>
+  </body>
+</html>
